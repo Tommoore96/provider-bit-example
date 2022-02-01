@@ -66,11 +66,13 @@ export class MyReactMain {
        * Uncomment types to include version 17.0.3 of the types package
        */
       react.overrideDependencies({
-        dependencies: { '@company/demo.ui.provider': '-' },
-        devDependencies: { '@company/demo.ui.provider': '-' },
         peerDependencies: {
-          '@company/demo.ui.provider': {
-            version: 'latest',
+          'styled-components': {
+            version: '5.3.3',
+            resolveFromEnv: true,
+          },
+          '@testing-library/react': {
+            version: '^12.0.0',
             resolveFromEnv: true,
           },
         },
