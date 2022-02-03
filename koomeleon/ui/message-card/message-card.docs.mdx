@@ -1,0 +1,34 @@
+---
+description: 'A Message Card component.'
+---
+
+import { MessageCard } from './message-card';
+import { Figma } from '@koodoo/koomeleon.figma';
+import { Icon } from './message-card.composition';
+
+## React Component for rendering text
+
+A basic div that formats two paragraph elements and an svg if passed one.
+
+### Component usage
+
+```js
+<MessageCard title="Message Title">
+  Descriptor text adding extra information and context
+</MessageCard>
+```
+
+### Using props to customize the text
+
+Modify the text to see it change live:
+
+```js live
+<MessageCard icon={<Icon />} title="Message Title">
+  Descriptor text adding extra information and <br /> context
+</MessageCard>
+```
+
+<Figma
+  loading="lazy"
+  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com/file/KxwTJZOx3qhe74R14fzhXg/Koodoo-Components?node-id=326%3A373"
+/>

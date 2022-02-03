@@ -1,0 +1,38 @@
+---
+description: 'A SummaryCard component.'
+---
+import { useState } from 'react';
+import { SummaryCard } from './summary-card';
+import { Figma } from '@koodoo/koomeleon.figma';
+
+## React Component for rendering text
+
+A card for summarising values given in a form and offering ability to edit content.
+
+### Component usage
+```js
+  <SummaryCard title="Summary title" value={value} errorMessage={/*Error message string goes here*/}>
+    <input placeholder="value" onChange={(event) => setValue(event.target.value)} value={value}/>
+  </SummaryCard>
+```
+
+### Using props to customize the text & error message
+
+Modify the props to see it change live:
+```js live
+() => {
+  const [value, setValue] = useState('')
+
+	return (
+  <div style={{width: '250px'}}>
+    <SummaryCard title="Summary title" value={value} errorMessage={value === 'error' && 'Error message'}>
+    <input placeholder="value" onChange={(event) => setValue(event.target.value)} value={value}/>
+    </SummaryCard>
+  </div>)
+}
+```
+
+<Figma
+  loading="lazy"
+  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com/file/KxwTJZOx3qhe74R14fzhXg/Koodoo-Components?node-id=439%3A86"
+/>

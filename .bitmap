@@ -11,9 +11,21 @@
 {
     "envs/my-react": {
         "scope": "tommoore96.provider-example",
-        "version": "0.0.4",
+        "version": "0.0.5",
         "mainFile": "index.ts",
         "rootDir": "demo/envs/my-react"
+    },
+    "themes": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "provider-example/themes"
+    },
+    "ui/message-card": {
+        "scope": "koodoo.koomeleon",
+        "version": "0.0.21",
+        "mainFile": "index.ts",
+        "rootDir": "koomeleon/ui/message-card"
     },
     "ui/provider": {
         "scope": "tommoore96.provider-example",
@@ -21,9 +33,15 @@
         "mainFile": "index.ts",
         "rootDir": "demo/ui/provider"
     },
+    "ui/summary-card": {
+        "scope": "koodoo.koomeleon",
+        "version": "0.0.19",
+        "mainFile": "index.ts",
+        "rootDir": "koomeleon/ui/summary-card"
+    },
     "ui/text": {
         "scope": "tommoore96.provider-example",
-        "version": "0.0.4",
+        "version": "0.0.5",
         "mainFile": "index.ts",
         "rootDir": "demo/ui/text"
     },

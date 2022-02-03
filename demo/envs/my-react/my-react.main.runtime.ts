@@ -2,6 +2,8 @@ import { MainRuntime } from '@teambit/cli';
 import { ReactAspect, ReactMain } from '@teambit/react';
 import { EnvsAspect, EnvsMain } from '@teambit/envs';
 import { MyReactAspect } from './my-react.aspect';
+import type { TypescriptConfigMutator } from '@teambit/typescript';
+import { resolve } from 'path';
 // import { previewConfigTransformer, devServerConfigTransformer } from './webpack/webpack-transformers';
 
 /**
@@ -23,7 +25,17 @@ export class MyReactMain {
        * Your config gets merged with the defaults
        */
 
-      // react.overrideTsConfig(tsconfig),
+      react.useTypescript({
+        buildConfig: [
+          (config: TypescriptConfigMutator) => {
+            config.addTypes([
+              resolve(__dirname, './typescript/styled-components.d.ts'),
+            ]);
+
+            return config;
+          },
+        ],
+      }),
       // react.useWebpack({
       //   previewConfig: [previewConfigTransformer],
       //   devServerConfig: [devServerConfigTransformer],
