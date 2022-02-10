@@ -10,14 +10,14 @@ const mockUseTheme = {
 	},
 };
 
-// jest.mock('styled-components', () => {
-// 	const originalModule = jest.requireActual('styled-components');
-// 	return {
-// 		__esModule: true,
-// 		...originalModule,
-// 		useTheme: () => mockUseTheme,
-// 	};
-// });
+jest.mock('styled-components', () => {
+	const originalModule = jest.requireActual('styled-components');
+	return {
+		__esModule: true,
+		...originalModule,
+		useTheme: () => mockUseTheme,
+	};
+});
 
 const queryButton = (name: RegExp | string) => screen.queryByRole('button', { name });
 
