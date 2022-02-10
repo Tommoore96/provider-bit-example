@@ -21,6 +21,12 @@
         "mainFile": "index.ts",
         "rootDir": "provider-example/themes"
     },
+    "ui/error-message": {
+        "scope": "koodoo.koomeleon",
+        "version": "0.0.27",
+        "mainFile": "index.js",
+        "rootDir": "koomeleon/ui/error-message"
+    },
     "ui/message-card": {
         "scope": "koodoo.koomeleon",
         "version": "0.0.21",
