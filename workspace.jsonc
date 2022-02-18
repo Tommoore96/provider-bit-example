@@ -45,6 +45,7 @@
         "@teambit/eslint-config-bit-react": "~0.0.367",
         "@teambit/harmony": "0.2.11",
         "@teambit/react.templates.themes.theme": "0.0.4",
+        "@types/styled-components": "5.1.23",
         "@typescript-eslint/eslint-plugin": "4.29.3",
         "classnames": "2.3.1",
         "eslint-import-resolver-node": "0.3.6",
@@ -78,20 +79,14 @@
        * to use the default React development environment.
        *
       */
-    "{ui/**}, !{ui/provider}": {
-      // "teambit.react/react": {}
-      "tommoore96.provider-example/envs/my-react": {}
-    },
-    "{blocks/**}, {pages/**}, {themes/**}, {ui/provider}": {
-      "teambit.react/react": {}
-    },
-    /**
-       * configures components with namespaces 'entities', 'modules' and 'functions' to use the 
-       * default NodeJS dev environment.
-      */
-    "{entities/**}, {modules/**}, {functions/**}": {
-      "teambit.harmony/node": {}
-    },
+      "{ui/**}, !{ui/theme-provider}, {utils/**}": {
+        // uses the custom env
+        "koodoo.koomeleon/extensions/react-env": {}
+        // uncomment the line below if you remove the custom env and remove the line above
+      },
+      "{ui/theme-provider}": {
+        "teambit.react/react": {}
+      },
     /**
        * configures components with namespace 'content' to use the MDX dev environment.
       */
@@ -101,7 +96,7 @@
     /**
        * configures components with namespaces 'envs' and 'aspects' to use the default Aspect development environment.
       */
-    "{envs/**}, {aspects/**}, {apps/**}": {
+    "{extensions/**}, {aspects/**}, {apps/**}": {
       "teambit.harmony/aspect": {}
     }
   }

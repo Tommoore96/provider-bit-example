@@ -9,12 +9,6 @@
  */
 
 {
-    "envs/my-react": {
-        "scope": "tommoore96.provider-example",
-        "version": "0.0.5",
-        "mainFile": "index.ts",
-        "rootDir": "demo/envs/my-react"
-    },
     "extensions/react-env": {
         "scope": "koodoo.koomeleon",
         "version": "0.0.22",
@@ -93,12 +87,6 @@
         "mainFile": "index.ts",
         "rootDir": "koomeleon/ui/progress-bar"
     },
-    "ui/provider": {
-        "scope": "tommoore96.provider-example",
-        "version": "0.0.1",
-        "mainFile": "index.ts",
-        "rootDir": "demo/ui/provider"
-    },
     "ui/question-card": {
         "scope": "koodoo.koomeleon",
         "version": "0.0.23",
@@ -128,12 +116,6 @@
         "version": "0.0.22",
         "mainFile": "index.ts",
         "rootDir": "koomeleon/ui/summary-card"
-    },
-    "ui/text": {
-        "scope": "tommoore96.provider-example",
-        "version": "0.0.5",
-        "mainFile": "index.ts",
-        "rootDir": "demo/ui/text"
     },
     "ui/theme-provider": {
         "scope": "koodoo.koomeleon",

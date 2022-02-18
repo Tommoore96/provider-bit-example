@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
+import { ExportedDefaultTheme } from '@koodoo/koomeleon.themes';
 
-export const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle<{ theme: ExportedDefaultTheme }>`
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
   body {
