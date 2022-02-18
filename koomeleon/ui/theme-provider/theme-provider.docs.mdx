@@ -1,0 +1,21 @@
+---
+description: 'A ThemeProvider component.'
+---
+
+import { ThemeProvider } from './theme-provider';
+
+## React Component for rendering text
+
+A [styled-components theme provider](https://styled-components.com/docs/advanced#theming) that is wrapped to change themes when theme name string changes.
+
+So far all of our components have the following themes as a minimum:
+
+- Koodoo/default - `koodooTheme`
+- Confused.com - `confusedTheme`
+- NewdWallet - `nerdwalletTheme`
+
+### Component usage
+
+```js
+<ThemeProvider theme="koodooTheme">{/* {Components go here} */}</ThemeProvider>
+```

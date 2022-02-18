@@ -1,0 +1,64 @@
+---
+description: 'A radio button that allows the user to make a selection. Generally used within a set where one option is selected.'
+labels: ['Radio Button', 'Radio Field']
+---
+
+import { RadioButton } from './radio-button';
+import { Figma } from '@koodoo/koomeleon.figma';
+import { useState } from 'react';
+
+### Component usage
+
+```js
+const [selected, setSelected] = useState(null);
+
+const radioInput = {
+  primaryText: 'First Option',
+  secondaryText: 'Extra text providing additional context',
+  value: 'Demo Option',
+  onValueChange: (value) => setSelected(value),
+  suffix: {
+    value: 'Value',
+    label: 'Label',
+  },
+  error: false,
+};
+
+return (
+      <RadioButton {...radioInput} />
+);
+```
+
+### Using props to customize the text
+
+Modify the text to see it change live:
+
+```js live
+() => {
+  const [selected, setSelected] = useState(null);
+
+  const radioInput = {
+    primaryText: 'First Option',
+    secondaryText: 'Extra text providing additional context',
+    value: 'Demo Option',
+    onValueChange: (value) => setSelected(value),
+    suffix: {
+      valueText: 'Value',
+      valueLabelText: 'Label',
+    },
+    error: false,
+  };
+
+  return (
+    <>
+        <RadioButton {...radioInput} />
+      <div>Selected: {selected ? selected : 'None'}</div>
+    </>
+  );
+};
+```
+
+<Figma
+  loading="lazy"
+  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com/file/KxwTJZOx3qhe74R14fzhXg/Koodoo-Components?node-id=1%3A913"
+/>

@@ -1,0 +1,49 @@
+---
+description: 'A QuestionCard component.'
+---
+
+import { Figma } from '@koodoo/koomeleon.figma';
+import { QuestionCard } from './question-card';
+import { styles } from './demo-styles.js';
+
+## React Component for asking questions
+
+A component that displays headers and questions, also provides the ability to pass in children to make a form
+
+### Component usage
+
+```js
+<QuestionCard
+  sectionTitle="Origination"
+  title="Second Charge"
+  question="What is your annual income?"
+>
+  // children here...
+  <Input />
+  <Button>Next</Button>
+</QuestionCard>
+```
+
+### Using props to customize the text
+
+Modify the text to see it change live:
+
+```js live
+() => {
+  return (
+    <QuestionCard
+      sectionTitle="Origination"
+      title="Second Charge"
+      question="What is your annual income?"
+    >
+      <input style={styles.input} />
+      <button style={styles.button}>Next</button>
+    </QuestionCard>
+  );
+};
+```
+
+<Figma
+  loading="lazy"
+  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com/file/KxwTJZOx3qhe74R14fzhXg/Koodoo-Components?node-id=483%3A754"
+/>

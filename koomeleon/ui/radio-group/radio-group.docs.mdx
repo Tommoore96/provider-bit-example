@@ -1,0 +1,101 @@
+---
+description: 'A group of radio buttons that can be used in a form.'
+labels: ['Radio Button', 'Radio Group']
+---
+
+import { RadioGroup } from './radio-group';
+import { useState, useEffect } from 'react';
+import { Figma } from '@koodoo/koomeleon.figma';
+
+### Component usage
+
+```js
+const [selectedValue, setSelectedValue] = useState('None');
+const radioButtons = [
+  {
+    primaryText: 'First Option',
+    error: false,
+    value: 'First Option',
+  },
+  {
+    primaryText: 'Second Option',
+    secondaryText: 'Extra text providing additional context',
+    error: false,
+    value: 'Second Option',
+  },
+  {
+    primaryText: 'Third Option',
+    secondaryText: 'Extra text providing additional context',
+    suffix: {
+      valueText: 'Value',
+      valueLabelText: 'Label',
+    },
+    error: false,
+    value: 'Third Option',
+  },
+];
+
+const props = {
+  fieldSet: 'LiveExample',
+  radioButtons: radioButtons,
+  errorMessage: '',
+  onValueChange: (value) => setSelectedValue(value),
+};
+
+return (
+      <RadioGroup {...props} />
+);
+```
+
+### Using props to customize the text
+
+Modify the text to see it change live:
+
+```js live
+() => {
+  const [selectedValue, setSelectedValue] = useState('None');
+  const radioButtons = [
+    {
+      primaryText: 'First Option',
+      error: false,
+      value: 'First Option',
+    },
+    {
+      primaryText: 'Second Option',
+      secondaryText: 'Extra text providing additional context',
+      error: false,
+      value: 'Second Option',
+    },
+    {
+      primaryText: 'Third Option',
+      secondaryText: 'Extra text providing additional context',
+      suffix: {
+        valueText: 'Value',
+        valueLabelText: 'Label',
+      },
+      error: false,
+      value: 'Third Option',
+    },
+  ];
+
+  const props = {
+    fieldSet: 'LiveExample',
+    radioButtons: radioButtons,
+    value: selectedValue,
+    errorMessage: '',
+    onValueChange: (value) => setSelectedValue(value),
+  };
+
+  return (
+    <>
+      <RadioGroup {...props} />
+      <div>Selected: {selectedValue}</div>
+    </>
+  );
+};
+```
+
+<Figma
+  loading="lazy"
+  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com/file/KxwTJZOx3qhe74R14fzhXg/Koodoo-Components?node-id=3044%3A20986"
+/>

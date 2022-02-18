@@ -1,0 +1,23 @@
+// By default, Component compilation is done with the TypeScript compiler. 
+// Target format is `ES2015` which supports execution from both NodeJS
+// and browser runtimes for server-side rendering. You can modify this
+// file to add your own compiler options which will then merged with
+// the default configs set by teambit.
+{
+  // add your compiler options here
+
+  "compilerOptions": {
+    // "target": "es2017",
+    // "module": "es2015",
+    // "moduleResolution": "node",
+    // "lib": ["es2017", "dom"],
+    // "experimentalDecorators": true,
+    // "esModuleInterop": true,
+    // "outDir": "dist",
+    // "sourceMap": true,
+    // "emitDecoratorMetadata": true,
+    // "allowJs": true,
+    // "baseUrl": ".",
+    // "jsx": "react"
+  }
+}

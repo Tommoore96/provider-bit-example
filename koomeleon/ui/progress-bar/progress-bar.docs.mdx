@@ -1,0 +1,46 @@
+---
+description: 'A bar that represents a percentage value when given an integer between 0 - 100.'
+labels: ['Progress Bar']
+---
+
+import { ProgressBar } from './progress-bar';
+import { useEffect, useState } from 'react';
+import { Button } from '@koodoo/koomeleon.ui.button';
+import { Figma } from '@koodoo/koomeleon.figma';
+
+### Component usage
+
+```js
+() => {
+  const [percent, setPercent] = useState(50);
+  return (
+    <ProgressBar percent={percent} showPercent={false}/>
+    <button  onClick={() => percent >= 100 ? setPercent(0) : setPercent(100)}>Animate</button>
+  )
+};
+```
+
+### Using props to customize the text
+
+Modify the text to see it change live:
+
+```js live
+() => {
+  const [percent, setPercent] = useState(50);
+  return (
+      <div style={{ width: '350px' }}>
+        <ProgressBar percent={percent} showPercent={false} />
+        <button
+          onClick={() => (percent >= 100 ? setPercent(0) : setPercent(100))}
+        >
+          Animate
+        </button>
+      </div>
+  );
+};
+```
+
+<Figma
+  loading="lazy"
+  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com/file/KxwTJZOx3qhe74R14fzhXg/Koodoo-Components?node-id=1002%3A2032"
+/>

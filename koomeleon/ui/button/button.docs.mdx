@@ -1,0 +1,53 @@
+---
+description: 'A Button component.'
+---
+
+import { Figma } from '@koodoo/koomeleon.figma';
+import { Button, ButtonType, ButtonSize } from './button';
+import { ClockIcon } from './clock-icon';
+
+## React Component for rendering text
+
+A basic button with text
+
+### Component usage
+
+```js
+<Button>Click me</Button>
+```
+
+### Using props to customize the text
+
+Modify the text to see it change live:
+
+```js live
+() => {
+  const buttonStyles = {
+    margin: '10px',
+  };
+
+  return (
+    <div style={{ alignItems: 'center', display: 'flex' }}>
+        <Button style={buttonStyles} buttonSize="small" buttonType="primary">
+          Small
+        </Button>
+        <Button style={buttonStyles} buttonSize="small" buttonType="primary">
+          <ClockIcon />
+          Small
+        </Button>
+        <Button style={buttonStyles} buttonSize="medium" buttonType="primary">
+          Medium
+        </Button>
+        <Button style={buttonStyles} buttonSize="medium" buttonType="primary">
+          <ClockIcon />
+          Medium
+        </Button>
+    </div>
+  );
+};
+```
+
+<Figma
+  loading="lazy"
+  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com/file/KxwTJZOx3qhe74R14fzhXg/Koodoo-Components?node-id=1%3A696"
+/>

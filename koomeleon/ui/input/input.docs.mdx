@@ -1,0 +1,50 @@
+---
+description: 'An Input component.'
+---
+
+import { useState } from 'react';
+import { Figma } from '@koodoo/koomeleon.figma';
+import { Input } from './input';
+
+## React Component for rendering text
+
+An input component that takes a prefix, suffix, and an invalid state with an error message.
+
+This is still a regular React HTML input underneath meaning any attribute that may be added
+in react or in HTML may be added here also.
+
+### Component usage
+
+```js
+const BasicInput = () => {
+  const [value, setValue] = useState('');
+
+  return <Input onChange={(e) => setValue(e.target.value)} value={value} />;
+};
+```
+
+### Using props to customize the text
+
+Modify the text to see it change live:
+
+```js live
+() => {
+  const [value, setValue] = useState('');
+
+  return (
+      <Input
+        onChange={(e) => setValue(e.target.value)}
+        value={value}
+        errorMessage={'Error message goes here'}
+        placeholder="Text goes here"
+        prefix="£"
+        suffix="years"
+      />
+  );
+};
+```
+
+<Figma
+  loading="lazy"
+  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com/file/KxwTJZOx3qhe74R14fzhXg/Koodoo-Components?node-id=1%3A569"
+/>

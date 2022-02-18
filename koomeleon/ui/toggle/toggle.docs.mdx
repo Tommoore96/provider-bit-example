@@ -1,0 +1,33 @@
+---
+description: 'A Toggle component.'
+---
+
+import { useState } from 'react';
+import { Figma } from '@koodoo/koomeleon.figma';
+import { Toggle } from './toggle';
+
+## React Component for rendering text
+
+A basic div that renders some text
+
+### Component usage
+
+```js
+<Toggle checked={true} />
+```
+
+### Using props to customize the text
+
+Modify the code to see it change live:
+
+```js live
+() => {
+  const [checked, setChecked] = useState(false);
+  return <Toggle checked={checked} onChange={() => setChecked(!checked)} />;
+};
+```
+
+<Figma
+  loading="lazy"
+  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com/file/KxwTJZOx3qhe74R14fzhXg/Koodoo-Components?node-id=1863%3A46877"
+/>

@@ -1,0 +1,26 @@
+---
+labels: ['utility', 'module']
+description: 'A series of utility functions related to fonts'
+---
+
+API:
+
+```ts
+/**
+ * Get font CSS block for components with custom compositions, e.g. button, radio-button
+ */
+function GetFontCSSForCustomComposition(
+  theme: DefaultTheme,
+  componentName: ComponentName,
+  componentComposition: ComponentComposition
+): string;
+
+/**
+ * Get font CSS block for components with default compositions, e.g. error-message, input
+ */
+function GetFontCSSForDefaultComposition(
+  theme: DefaultTheme,
+  componentName: ComponentName,
+  componentComposition: ComponentComposition
+): string;
+```

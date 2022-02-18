@@ -15,23 +15,83 @@
         "mainFile": "index.ts",
         "rootDir": "demo/envs/my-react"
     },
-    "themes": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "provider-example/themes"
-    },
-    "ui/error-message": {
+    "extensions/react-env": {
         "scope": "koodoo.koomeleon",
-        "version": "0.0.27",
-        "mainFile": "index.js",
-        "rootDir": "koomeleon/ui/error-message"
+        "version": "0.0.22",
+        "mainFile": "index.ts",
+        "rootDir": "koomeleon/extensions/react-env"
     },
-    "ui/message-card": {
+    "figma": {
+        "scope": "koodoo.koomeleon",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "koomeleon/figma"
+    },
+    "generator/theme-json": {
+        "scope": "koodoo.koomeleon",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "koomeleon/generator/theme-json"
+    },
+    "themes": {
+        "scope": "koodoo.koomeleon",
+        "version": "0.0.8",
+        "mainFile": "index.ts",
+        "rootDir": "koomeleon/themes"
+    },
+    "ui/button": {
+        "scope": "koodoo.koomeleon",
+        "version": "0.0.31",
+        "mainFile": "index.ts",
+        "rootDir": "koomeleon/ui/button"
+    },
+    "ui/comparison-header": {
         "scope": "koodoo.koomeleon",
         "version": "0.0.21",
         "mainFile": "index.ts",
+        "rootDir": "koomeleon/ui/comparison-header"
+    },
+    "ui/date-input": {
+        "scope": "koodoo.koomeleon",
+        "version": "0.0.12",
+        "mainFile": "index.ts",
+        "rootDir": "koomeleon/ui/date-input"
+    },
+    "ui/error-message": {
+        "scope": "koodoo.koomeleon",
+        "version": "0.0.28",
+        "mainFile": "index.js",
+        "rootDir": "koomeleon/ui/error-message"
+    },
+    "ui/header": {
+        "scope": "koodoo.koomeleon",
+        "version": "0.0.9",
+        "mainFile": "index.ts",
+        "rootDir": "koomeleon/ui/header"
+    },
+    "ui/input": {
+        "scope": "koodoo.koomeleon",
+        "version": "0.0.30",
+        "mainFile": "index.ts",
+        "rootDir": "koomeleon/ui/input"
+    },
+    "ui/journey-renderer": {
+        "scope": "koodoo.koomeleon",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "koomeleon/ui/journey-renderer"
+    },
+    "ui/message-card": {
+        "scope": "koodoo.koomeleon",
+        "version": "0.0.24",
+        "mainFile": "index.ts",
         "rootDir": "koomeleon/ui/message-card"
+    },
+    "ui/progress-bar": {
+        "scope": "koodoo.koomeleon",
+        "version": "0.0.32",
+        "mainFile": "index.ts",
+        "rootDir": "koomeleon/ui/progress-bar"
     },
     "ui/provider": {
         "scope": "tommoore96.provider-example",
@@ -39,9 +99,33 @@
         "mainFile": "index.ts",
         "rootDir": "demo/ui/provider"
     },
+    "ui/question-card": {
+        "scope": "koodoo.koomeleon",
+        "version": "0.0.23",
+        "mainFile": "index.ts",
+        "rootDir": "koomeleon/ui/question-card"
+    },
+    "ui/radio-button": {
+        "scope": "koodoo.koomeleon",
+        "version": "0.0.28",
+        "mainFile": "index.ts",
+        "rootDir": "koomeleon/ui/radio-button"
+    },
+    "ui/radio-field": {
+        "scope": "koodoo.koomeleon",
+        "version": "0.0.30",
+        "mainFile": "index.ts",
+        "rootDir": "koomeleon/ui/radio-field"
+    },
+    "ui/radio-group": {
+        "scope": "koodoo.koomeleon",
+        "version": "0.0.3",
+        "mainFile": "index.ts",
+        "rootDir": "koomeleon/ui/radio-group"
+    },
     "ui/summary-card": {
         "scope": "koodoo.koomeleon",
-        "version": "0.0.19",
+        "version": "0.0.22",
         "mainFile": "index.ts",
         "rootDir": "koomeleon/ui/summary-card"
     },
@@ -50,6 +134,24 @@
         "version": "0.0.5",
         "mainFile": "index.ts",
         "rootDir": "demo/ui/text"
+    },
+    "ui/theme-provider": {
+        "scope": "koodoo.koomeleon",
+        "version": "0.0.12",
+        "mainFile": "index.ts",
+        "rootDir": "koomeleon/ui/theme-provider"
+    },
+    "ui/toggle": {
+        "scope": "koodoo.koomeleon",
+        "version": "0.0.24",
+        "mainFile": "index.ts",
+        "rootDir": "koomeleon/ui/toggle"
+    },
+    "utils/font": {
+        "scope": "koodoo.koomeleon",
+        "version": "0.0.7",
+        "mainFile": "index.ts",
+        "rootDir": "koomeleon/utils/font"
     },
     "$schema-version": "14.9.0"
 }

@@ -1,0 +1,60 @@
+---
+description: 'A header with an optional progress bar for comparison journeys.'
+labels: ['Header', 'Progress Bar']
+---
+
+import { useState } from 'react';
+import { Header } from './header';
+import { Figma } from '@koodoo/koomeleon.figma';
+import { GenericCustomerLogo } from './GenericCustomerLogo';
+import { PoweredByKoodooLogo } from './PoweredByKoodooLogo';
+import { ProgressBar } from '@koodoo/koomeleon.ui.progress-bar';
+import styled from 'styled-components';
+
+### Component usage
+
+```js
+() => {
+  const [percent, setPercent] = useState(50);
+  return (
+    <Header
+      onClick={() => (percent >= 100 ? setPercent(0) : setPercent(100))}
+    >
+      <GenericCustomerLogo />
+      <PoweredByKoodooLogo />
+      <ProgressBar percent={percent} showPercent={false} />
+    </Header>
+  );
+};
+```
+
+### Using props to customize the text
+
+Modify the text to see it change live:
+
+```js live
+() => {
+  const [percent, setPercent] = useState(50);
+  return (
+      <div
+        style={{
+          width: '350px',
+          height: '100%',
+          cursor: 'pointer',
+        }}
+        onClick={() => (percent >= 100 ? setPercent(0) : setPercent(100))}
+      >
+        <Header>
+          <GenericCustomerLogo />
+          <PoweredByKoodooLogo />
+          <ProgressBar percent={percent} showPercent={false} />
+        </Header>
+      </div>
+  );
+};
+```
+
+<Figma
+  loading="lazy"
+  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com/file/KxwTJZOx3qhe74R14fzhXg/Koodoo-Components?node-id=1360%3A8"
+/>
